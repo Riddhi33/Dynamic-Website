@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.meet-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.designation-text p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.different-section {
+    margin-bottom: 40px;
+}
+
+.what-makes-different h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.what-makes-different p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.photo-detail-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.photo-detail-column {
+    flex: 1 1 250px;
+}
+
+.photo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.photo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details-capsule {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.details-capsule h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.details-capsule p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.thank-you {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+    color: #666;
+}

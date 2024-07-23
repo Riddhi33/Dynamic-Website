@@ -1,0 +1,196 @@
+@charset "ISO-8859-1";
+
+
+
+/* Fromhereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blueviolet;
+}
+
+.container{
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 14px 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: blueviolet;
+}
+
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    width: 1005;
+}
+
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.13);
+}
+
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+
+.input-field input[type="date"]{
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+.input-field .radio-button {
+    display: flex;
+    align-items: center;
+}
+
+
+.input-field .radio-button label{
+    margin-right: 20px;
+}
+
+.input-field .radio-button input[type="radio"]{
+    margin-right: 5px;
+}
+
+.container form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 150px;
+    width: 80%;
+
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px auto;
+    background-color: blueviolet;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: rgb(86, 34, 135);
+}
+
+
+
+
+
+.container form .details-personal .fields .input-field {
+    width: 100%;
+    margin: 12px 0; 
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="number"],
+.input-field input[type="file"] {
+    width: calc(100% - 30px); 
+}
+
+.container form .details-personal .fields .input-field:nth-child(odd) {
+    margin-right: 15px;
+}
+
+
+
+
+.container form .fields .input-field:nth-child(2),
+.container form .fields .input-field:nth-child(4),
+.container form .fields .input-field:nth-child(6) {
+    width: calc(100% - 10px); /* Adjust width as needed */
+}
+
+.input-field input[type="file"] {
+    width: calc(96% - 10px); 
+}
+
+
+
+
+
+
